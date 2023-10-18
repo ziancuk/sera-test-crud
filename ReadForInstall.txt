@@ -1,0 +1,16 @@
+Api Test Menggunakan Express Js dan database MongoDB.
+For Your Information :
+1. Versi node yang dipakai di laptop local : v14.19.0
+2. Pastikan menginstall aplikasi MongoDB Compass dan connect. Jika ada credentials yang ingin diubah, silahkan di rubah di file .env
+
+Cara install dan menggunakan API TEST :
+1. Menjalankan perintah 'npm install' terlebih dahulu.
+2. Lalu jalankan perintah 'npm run start'.
+3. API collection postman juga sudah saya sediakan jika ingin digunakan.
+4. Melakukan Register / Login user terlebih dahulu pada postman sesuai dengan endpoint pada collection.
+5. silahkan gunakan perintah "node faker 'product.js' 10" untuk insert data dummy pada database. angka 10 untuk menentukan jumlah data yang akan di insert
+6. lakukan get data pada postman untuk mendapatkan id product yg akan di tes.
+7. jalankan "npx mocha getTest.js <email untuk login> <id product> untuk unit test get product dan show product.
+8. jalankan "npx mocha postTest.js <email untuk login> <title product> <deskripsi produk> untuk unit test post product.
+9. jalankan "npx mocha deleteTest.js <email untuk login> <id product> untuk unit test delete product.
+10. Silahkan lakukan pengecekan sesuai dengan ketentuan.
